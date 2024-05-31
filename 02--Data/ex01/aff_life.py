@@ -24,7 +24,7 @@ def aff_life(data : pandas.core.frame.DataFrame, country: str):
 
 
     new_df.plot(kind='line', title=f"Life expectancy in {country}", legend=True, grid=True , color='blue', linewidth=2.5)
-    plt.xlabel('Year') 
+    plt.xlabel('Year')
     plt.ylabel('Life expectancy') 
     plt.title(f'{country} Life expectancy Projection', fontsize = 10) 
     plt.show()
