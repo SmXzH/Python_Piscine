@@ -4,7 +4,7 @@ class Character(ABC):
     """
     Abstract base class representing a character.
     """
-
+    @abstractmethod
     def __init__(self, first_name, is_alive=True):
         """
         Constructor for the Character class.
@@ -15,7 +15,6 @@ class Character(ABC):
         self.first_name = first_name
         self.is_alive = is_alive
 
-    @abstractmethod
     def die(self):
         """
         Abstract method to change the health state of the character to dead.
@@ -34,8 +33,7 @@ class Stark(Character):
         :param first_name: First name of the Stark character.
         :param is_alive: Boolean indicating if the Stark character is alive. Default is True.
         """
-        self.family_name = first_name
-        self.is_alive = is_alive
+        super().__init__(first_name, is_alive)
 
     def die(self):
         """
