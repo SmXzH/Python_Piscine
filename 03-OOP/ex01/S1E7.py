@@ -1,0 +1,9 @@
+from S1E9 import Character
+
+class Baratheon(Character):
+
+    ...
+class Lannister(Character):
+    ...
+    def create_lannister(name):
+        ...
