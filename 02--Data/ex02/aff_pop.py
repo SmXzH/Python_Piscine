@@ -59,14 +59,12 @@ def aff_pop(data: pd.core.frame.DataFrame, country1: str, country2: str):
     plt.plot(years, pop_country2, label=country2)
 
     plt.xlabel('Year')
-    plt.xticks(range(1800, 2051, 40), range(1800, 2051, 40))
+    plt.xticks(range(1800, 2051, 40))
     plt.xlim(1800, 2040)
     plt.ylabel('Population')
     plt.title('Population Projection')
     plt.legend()
     plt.show()
-    # print(pop_country1)
-    # print(pop_country2)
 
     
 
