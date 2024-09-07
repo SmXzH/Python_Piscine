@@ -8,7 +8,8 @@ def parsing_population(pop_str: str):
     The population string can end with 'M' for million or 'k' for thousand.
     If the population string ends with 'M', multiply the number by 1e6.
     If the population string ends with 'k', multiply the number by 1e3.
-    If the population string does not end with 'M' or 'k', return the number as a float.
+    If the population string does not end with 'M' or 'k',
+        return the number as a float.
 
     Parameters:
         pop_str (str): The population string.
@@ -27,7 +28,8 @@ def parsing_population(pop_str: str):
 def aff_pop(data: pd.core.frame.DataFrame, country1: str, country2: str):
     '''
     Display a line plot of the population of the given countries.
-    If a country is not found in the dataset, print "Error: {country} not found in dataset."
+    If a country is not found in the dataset, print "Error: {country}
+        not found in dataset."
 
     Parameters:
         data (pandas.core.frame.DataFrame): The dataset.
@@ -47,7 +49,7 @@ def aff_pop(data: pd.core.frame.DataFrame, country1: str, country2: str):
     if df2.empty:
         print(f"Error: {country2} not found in dataset.")
         return
-    
+
     pop_country1 = df1.values.flatten()
     pop_country2 = df2.values.flatten()
     years = data.columns[1:].astype(int)
@@ -65,7 +67,3 @@ def aff_pop(data: pd.core.frame.DataFrame, country1: str, country2: str):
     plt.title('Population Projection')
     plt.legend()
     plt.show()
-
-    
-
-

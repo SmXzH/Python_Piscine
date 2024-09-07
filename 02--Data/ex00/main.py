@@ -1,6 +1,6 @@
 from load_csv import load
 
-PATH = "/Users/sam/Desktop/Python_Piscine/02--Data/data/life_expectancy_years.csv"
+PATH = "../data/life_expectancy_years.csv"
 
 
 def main():

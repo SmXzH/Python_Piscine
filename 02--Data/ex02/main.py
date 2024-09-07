@@ -2,7 +2,7 @@ from load_csv import load
 from aff_pop import aff_pop
 
 
-PATH = "/Users/sam/Desktop/Python_Piscine/02--Data/data/population_total.csv"
+PATH = "../data/population_total.csv"
 
 
 def main():

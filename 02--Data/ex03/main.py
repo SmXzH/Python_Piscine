@@ -2,8 +2,8 @@ from load_csv import load
 from projection_life import projection_life
 
 
-PATH = "/Users/sam/Desktop/Python_Piscine/02--Data/data/life_expectancy_years.csv"
-PATH_2 = "/Users/sam/Desktop/Python_Piscine/02--Data/data/income_per_person_gdppercapita_ppp_inflation_adjusted.csv"
+PATH = "../data/life_expectancy_years.csv"
+PATH_2 = "../data/income_per_person_gdppercapita_ppp_inflation_adjusted.csv"
 
 
 def main():
