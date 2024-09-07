@@ -2,11 +2,10 @@ from load_csv import load
 from projection_life import projection_life
 
 
-PATH = "../data/life_expectancy_years.csv"
-PATH_2 = "../data/income_per_person_gdppercapita_ppp_inflation_adjusted.csv"
-
-
 def main():
+    PATH = "../data/life_expectancy_years.csv"
+    PATH_2 = "../data/"
+    "income_per_person_gdppercapita_ppp_inflation_adjusted.csv"
     data = load(PATH)
     data2 = load(PATH_2)
     # if data is not None:

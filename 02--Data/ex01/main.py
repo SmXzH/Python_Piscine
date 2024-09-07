@@ -2,10 +2,8 @@ from load_csv import load
 from aff_life import aff_life
 
 
-PATH = "../data/life_expectancy_years.csv"
-
-
 def main():
+    PATH = "../data/life_expectancy_years.csv"
     data = load(PATH)
     if data is not None:
         print(data)

@@ -2,10 +2,8 @@ from load_csv import load
 from aff_pop import aff_pop
 
 
-PATH = "../data/population_total.csv"
-
-
 def main():
+    PATH = "../data/population_total.csv"
     data = load(PATH)
     if data is not None:
         print(data)
