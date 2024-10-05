@@ -22,7 +22,7 @@ class Character(ABC):
         Abstract method to change the health state of the character to dead.
         """
         pass
-    
+
     def __str__(self):
         """
         Method to return the string representation of the character.
@@ -30,7 +30,7 @@ class Character(ABC):
         :return: String representation of the character.
         """
         return f"Vector: ({self.family_name}, {self.eye_color}, {self.hair_color})"
-    
+
     def __repr__(self):
         """
         Method to return the string representation of the character.
