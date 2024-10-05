@@ -4,6 +4,20 @@ from matplotlib import pyplot as plt
 
 def projection_life(life_exp: pd.core.frame.DataFrame,
                     income: pd.core.frame.DataFrame):
+    '''
+    Display a scatter plot of the life expectancy and income of the year 1900.
+    The x-axis should be the income
+    and the y-axis should be the life expectancy.
+    The x-axis should be in a logarithmic scale.
+    The x-axis should have ticks at 300, 1000, and 10000
+    with labels '300', '1k', and '10k'.
+    The plot should have a title with the year.
+
+    Parameters:
+
+        life_exp (pandas.core.frame.DataFrame): The life expectancy dataset.
+        income (pandas.core.frame.DataFrame): The income dataset.
+    '''
     year = '1900'
     gnp1900 = income[year]
     life1900 = life_exp[year]
